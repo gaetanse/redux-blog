@@ -1,3 +1,5 @@
+import { Component } from "react"
+
 class Contacts extends Component {
     constructor(props) {
         super(props);
@@ -6,7 +8,7 @@ class Contacts extends Component {
     render() { 
         return ( 
             <div>
-                
+
             </div>
          );
     }

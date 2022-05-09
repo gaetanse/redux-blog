@@ -1,3 +1,5 @@
+import { Component } from "react"
+
 class Ecrire extends Component {
     constructor(props) {
         super(props);
@@ -6,7 +8,7 @@ class Ecrire extends Component {
     render() { 
         return ( 
             <div>
-                
+
             </div>
          );
     }
