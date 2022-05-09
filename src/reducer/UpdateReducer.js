@@ -1,5 +1,5 @@
 const INITIAL_STATE = {
-    
+    listeArticles : []
 }
 
 function UpdateReducer (state = INITIAL_STATE, action) {
@@ -7,7 +7,7 @@ function UpdateReducer (state = INITIAL_STATE, action) {
         case 'UPDATE': {
             return{
                 ...state,
-                article: action.payload
+                listeArticles: action.payload
             }
         }
         default: {
