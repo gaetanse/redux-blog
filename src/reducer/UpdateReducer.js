@@ -1,19 +1,26 @@
 const INITIAL_STATE = {
-    listeArticles : []
+    listeArticles : [],
+    nosArticles: []
 }
 
 function UpdateReducer (state = INITIAL_STATE, action) {
     switch (action.type) {
-        case 'UPDATE': {
+        case 'UPDATEJSON': {
+            console.log(action.payload)
             return{
                 ...state,
-                listeArticles: action.payload
+                listeArticles: [...state.listeArticles, action.payload]
             }
         }
-        default: {
-            return state;
+        case 'UPDATEPERSO': {
+            console.log(action.payload)
+            return{
+                ...state,
+                nosArticles: [...state.nosArticles, action.payload]
+            }
         }
+        default: return state
     }
 }
 
-export default UpdateReducer;
+export default UpdateReducer
